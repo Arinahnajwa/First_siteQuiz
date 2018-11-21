@@ -44,9 +44,9 @@
   input:focus, textarea: focus {
     border: 1px solid white;
   }
-  .submit {
-    width: 90px;
-    height: 70px;
+    .submit {
+    width: 120px;
+    height: 41px;
     border: none;
     margin-top: 20px
     cursor: pointer;
@@ -62,7 +62,35 @@
       width: 100%
       margin-top:0;
     }
-  }
+  .navbar {
+      background-color: rgba(255, 105, 180, 1);
+      list-style: none;
+      margin: 0;
+      left: 50%;
+      padding: 0;
+      overflow: hidden;
+      text-align: center;
+    }
+    .navbar ul{
+      display: inline-block;
+      list-style-type: none;
+      text-align: center;
+      position: relative;
+    }
+    .navbar a {
+      color: white;
+      display: inline-block;
+      float: center;
+      font:50 40px/1.5 'Pacifico', Helvetica, sans-serif;
+      padding: 14px 20px;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .navbar a:hover {
+      background-color: rgba(255, 105, 180, 0.5);
+      color: rgba(250, 0, 193, 0.5);
+    }
   </style>
 </head>
 <body>
@@ -75,7 +103,7 @@
       <div class="column">
     </div>
     <div class="column">
-      <form>
+      <form method="post" action=>
         <label for="name">Name</label>
         <input type="text" id="name" name="name" placeholder="Your name...">
 
@@ -102,5 +130,11 @@
       </div>
     </div>
   </div>
+  <ul class="navbar">
+
+      <li><a href="index.html">Home</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
 </body>
 </html>
