@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<title>Contact Form</title>
+  <style>
+  body {
+    font: 30 20px/1.5 'Pacifico', Helvetica, sans-serif;
+    color: white;
+    background-color: rgba(255, 105, 180, 0.5);
+  }
+  *{
+      box-sizing: border-box;
+    }
+  label {
+    display: block;
+    margin-top:20px;
+    letter-spacing:2px;
+  }
+  .body {
+    display: block;
+    margin: 0 auto;
+    width: 576px;
+  }
+  form{
+  margin: 0 auto;
+  width: 455px;
+  }
+  input, textarea {
+    width: 439px;
+    height:27px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #dedede;
+    padding: 10px;
+    margin-top: 3px;
+    font-size: 0.9em;
+    color: black;
+  }
+  textarea{
+    height:213px;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  input:focus, textarea: focus {
+    border: 1px solid white;
+  }
+  .submit {
+    width: 90px;
+    height: 70px;
+    border: none;
+    margin-top: 20px
+    cursor: pointer;
+  }
+    .submit:hover {
+      opacity: 0.5;
+    }
+
+
+
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%
+      margin-top:0;
+    }
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div style="text-align: center">
+      <h2>Contact Us</h2>
+      <p> Tell us your results!</p>
+    </div>
+    <div class="row">
+      <div class="column">
+    </div>
+    <div class="column">
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name...">
+
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="Your email...">
+
+        <label for="continent">Continent</label>
+        <select id="continent" name="continent"
+          <option value="Asia">Asia</option>
+          <option value="Africa">Africa</option>
+          <option value="Antarctica">Antarctica</option>
+          <option value="Australia">Australia</option>
+          <option value="Europe">Europe</option>
+          <option value="North America">North America</option>
+          <option value="South America">South America</option>
+        </select>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Write here..." style="height: 170px">
+        </textarea>
+
+          <input type="submit" name="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

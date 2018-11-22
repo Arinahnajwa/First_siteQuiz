@@ -24,27 +24,34 @@ Amelia Earhart, Frida Kahlo, Angela davis
 
       text-align: center;
 
-      background-image: url();
-      background-size: cover;
-      background-position: center center;
+      background-image: url('https://cdn.pixabay.com/photo/2013/07/13/09/37/emancipation-155791_1280.png');
+      background-size: contain;
+      background-position: center;
       background-repeat: no-repeat;
       background-attachment: fixed;
+      background-color: rgba(255, 105, 180, 0.7)
     }
     .hero h1 {
-      font: 50 100px/1.5 'Pacifico', Helvetica, sans-serif;
-      color: rgb(255, 105, 180)
+      font: 50 110px/1.5 'Pacifico', Helvetica, sans-serif;
+      color: white;
+      position: absolute;
+      top: 145px;
+      left: 50%
       text-shadow: 3px 1px 0px rgba(0, 0, 0, 0.1), 3px 5px 0px
-      margin-top: 0;
-      margin-bottom: 0.5em;
+      transform: translate(-50%, -50%);
     }
     .hero h2 {
-      color: rgb(255, 105, 180);
+      color: white;
       font:50 50px/1.5 'Pacifico', Helvetica, sans-serif;
+      position: absolute;
+      top: 440px;
     }
     .hero .button {
       display: block;
       width: 200px;
       padding:1em;
+      position: absolute;
+      top: 540px;
       margin-top: 50px;
       margin-left: auto;
       margin-right: auto;
@@ -56,11 +63,16 @@ Amelia Earhart, Frida Kahlo, Angela davis
       background-color: rgba(255, 105, 180, 0.9);
     }
     .hero .button:hover {
-        background-color: rgba(255, 0, 0, 0.5);
+        background-color: rgba(255, 100, 170, 1);
         color: rgba(250, 0, 193, 0.5);
     }
-
-  .navbar {
+    .hero h3{
+      color: white;
+      font:50 40px/1.5 'Pacifico', Helvetica, sans-serif;
+      position: absolute;
+      top: 700px;
+    }
+.navbar {
     background-color: rgba(255, 105, 180, 1);
     list-style: none;
     margin: 0;
@@ -68,7 +80,7 @@ Amelia Earhart, Frida Kahlo, Angela davis
     overflow: hidden;
     text-align:center;
   }
-  .navbar ul.{
+  .navbar ul{
     display: inline-block;
     list-style-type: none;
     text-align: center;
@@ -78,6 +90,7 @@ Amelia Earhart, Frida Kahlo, Angela davis
     color: white;
     display: inline-block;
     float: center;
+    font:50 40px/1.5 'Pacifico', Helvetica, sans-serif;
     padding: 14px 20px;
     text-align: center;
     text-decoration: none;
@@ -95,13 +108,15 @@ Amelia Earhart, Frida Kahlo, Angela davis
         <h1>Which feminist icon are you?</h1>
         <h2>Take the quiz to find out!</h2>
         <a href="quiz.html" class="button">QUIZ</a>
+        <h3>Scroll down for more...</h3>
       </div>
     </section>
 
+
   <ul class="navbar">
 
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="contact.html">Contact</a></li>
       <li><a href="#">About</a></li>
     </ul>
 
