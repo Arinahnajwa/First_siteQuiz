@@ -8,72 +8,104 @@ Amelia Earhart, Frida Kahlo, Angela davis
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-<body>
 <style>
-      body{
-        margin:0;
+    body{
+          margin:0;
+          color: rgb(255, 105, 180);
+          font: sans-serif;
         }
-.hero-image {
-  background: url("documents/firstsite/images/girlpower.gif") no-repeat center;
-  background-size: cover;
-  height: 500px;
-  position: relative;
-}
-.header {
-  background-color: rgba(255, 105, 180, 0.7);
-  padding: 80px;
-  text-align: center;
-}
-.header h1 {
-    color: #2b2b2b;
-    font: 50 100px/1.5 'Pacifico', Helvetica, sans-serif;
-    text-shadow: 3px 1px 0px rgba(0, 0, 0, 0.1), 3px 5px 0px
-}
-.header p {
-  color: #2b2b2b;
-  font:50 50px/1.5 'Pacifico', Helvetica, sans-serif;
-}
-.navbar {
-  background-color: rgba(255, 105, 180, 1);
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  text-align:center;
-}
-.navbar li.{
-  display: inline;
-}
-.navbar a {
-  color: white;
-  display: inline-block;
-  float: center;
-  padding: 14px 20px;
-  text-align: center;
-  text-decoration: none;
-}
+    .hero {
+      width: 100vw;
+      height: 100vh;
+      /* flexbox? */
+      display:flex;
+      justify-content: center;
+      align-items: center;
 
-.navbar a:hover {
-  background-color: rgba(255, 105, 180, 0.5);
-  color: rgba(250, 0, 193, 0.5);
-}
-</style>
+      text-align: center;
+
+      background-image: url();
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+    .hero h1 {
+      font: 50 100px/1.5 'Pacifico', Helvetica, sans-serif;
+      color: rgb(255, 105, 180)
+      text-shadow: 3px 1px 0px rgba(0, 0, 0, 0.1), 3px 5px 0px
+      margin-top: 0;
+      margin-bottom: 0.5em;
+    }
+    .hero h2 {
+      color: rgb(255, 105, 180);
+      font:50 50px/1.5 'Pacifico', Helvetica, sans-serif;
+    }
+    .hero .button {
+      display: block;
+      width: 200px;
+      padding:1em;
+      margin-top: 50px;
+      margin-left: auto;
+      margin-right: auto;
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+      font-size: 1.5em;
+      border: 3px rgba(255, 105, 180, 0.9);
+      border-radius: 20px;
+      background-color: rgba(255, 105, 180, 0.9);
+    }
+    .hero .button:hover {
+        background-color: rgba(255, 0, 0, 0.5);
+        color: rgba(250, 0, 193, 0.5);
+    }
+
+  .navbar {
+    background-color: rgba(255, 105, 180, 1);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align:center;
+  }
+  .navbar ul.{
+    display: inline-block;
+    list-style-type: none;
+    text-align: center;
+    position: relative;
+  }
+  .navbar a {
+    color: white;
+    display: inline-block;
+    float: center;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .navbar a:hover {
+    background-color: rgba(255, 105, 180, 0.5);
+    color: rgba(250, 0, 193, 0.5);
+  }
+  </style>
 </head>
   <body>
-
-  <div class="header">
-    <h1>Which feminist icon are you?</h1>
-    <p>Take the quiz to find out!</p>
-  </div>
+    <section class="hero".
+      <div class="hero-inner">
+        <h1>Which feminist icon are you?</h1>
+        <h2>Take the quiz to find out!</h2>
+        <a href="quiz.html" class="button">QUIZ</a>
+      </div>
+    </section>
 
   <ul class="navbar">
 
-      <li><a href="#">Quiz</a></li>
-      <li><a href="#">Contact</a></li>
       <li><a href="#">Home</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">About</a></li>
     </ul>
 
-
+<script src="jquery-3.3.1.min.js"></script>
   </body>
 </html>
 <!--background-repeat: repeat;

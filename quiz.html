@@ -1,36 +1,38 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Take the Quiz</title>
-        <style>
-        h1 {color:teal;}
+<head>
+    <title>Take the Quiz</title>
+    <style>
+    body {
+      background-color:rgba(255, 105, 180, 0.7)
+    }
 
-        .pizza {
-          float:left;
-          width:50%;
-          padding: 5px
-        }
+    h1 {
+      color:white;
+      text-align: center;
+    }
 
-        .burger::after{
-          clear:both;
-          display:table;
-        }
-        </style>
-    </head>
-    <body>
-        <h1>Choose your favourite food and we'll tell you which feminist icon you are!</h1>
+     #images{
+       text-align: center;
+     }
 
-<div class="pizza">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Eq_it-na_pizza-margherita_sep2005_sml.jpg/440px-Eq_it-na_pizza-margherita_sep2005_sml.jpg"alt="A picture of pizza." width:100%>
-    <button class="btn">Pizzas for life</button>
-</div>
+    </style>
 
-<div class="burger">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Cheeseburger.jpg/600px-Cheeseburger.jpg" alt="A picture of a burger" width:100%>
-    <button class="btn">Burgers are my thing</button>
+</head>
+<body>
+  <h1>Choose your favourite food and we'll tell you which feminist icon you are!</h1>
+  <div id="images">
+  <a href="https://en.wikipedia.org/wiki/Malala_Yousafzai" target="_blank">
+    <img class="pizza" border="0" alt="Picture of pizza" src="https://images.all-free-download.com/images/graphiclarge/pizza_hd_picture_6_167274.jpg"/>
+    <p> Pizzas for life! </p>
+  </a>
+
+  <a href="https://en.wikipedia.org/wiki/Ruth_Bader_Ginsburg" target="_blank">
+    <img class="burger" border="0" alt="Picture of burger" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Cheeseburger.jpg/600px-Cheeseburger.jpg">
+    <p> Burgers for sure! </p>
+  </a>
 </div>
 
 <script src="jquery-3.3.1.min.js"></script>
-
-    </body>
+</body>
 </html>
