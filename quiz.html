@@ -11,29 +11,39 @@
       color:white;
       text-align: center;
     }
+  img{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 8px;
+    border-color: black
+  }
+
+  img:hover {
+      box-shadow: 0 0 2px 1px rgba(0, 100, 100, 0.5);
+    }
 
      #images{
        text-align: center;
      }
-
     </style>
 
 </head>
 <body>
   <h1>Choose your favourite food and we'll tell you which feminist icon you are!</h1>
   <div id="images">
-    <div class:"pizza">
-      <a href="https://en.wikipedia.org/wiki/Malala_Yousafzai" target="_blank">
-        <img width="300" height="300" border="0" alt="Picture of pizza" src="https://images.all-free-download.com/images/graphiclarge/pizza_hd_picture_6_167274.jpg"/>
-        <p> Pizzas for life! </p>
+      <a target="_blank" href="https://en.wikipedia.org/wiki/Malala_Yousafzai">
+        <img width="250" height="250" alt="Picture of pizza" src="https://images.all-free-download.com/images/graphiclarge/pizza_hd_picture_6_167274.jpg" >
       </a>
-      <a href="https://en.wikipedia.org/wiki/Ruth_Bader_Ginsburg" target="_blank">
-        <img width="300" height="250" border="0" alt="Picture of burger" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Cheeseburger.jpg/600px-Cheeseburger.jpg">
-        <p> Burgers for sure! </p>
+      <p> Pizzas for life!</p>
+
+      <a target="_blank" href="https://en.wikipedia.org/wiki/Ruth_Bader_Ginsburg">
+        <img width="250" height="200" alt="Picture of burger" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Cheeseburger.jpg/600px-Cheeseburger.jpg">
       </a>
+      <p> Burgers for sure! </p>
+
     </div>
 
-    <button onclick="goBack()">Go Back</button>
+   <button onclick="goBack()">Go Back</button>
 
 <script src="jquery-3.3.1.min.js"></script>
   <script>
