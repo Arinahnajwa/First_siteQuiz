@@ -1,34 +1,59 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Take the Quiz</title>
-        <style>
-        h1 {color:teal;}
+<head>
+    <title>Take the Quiz</title>
+    <style>
+    body {
+      background-color:#c0ded9
+    }
+    h1 {
+      color:#ff6f69;
+      text-align: center;
+      padding-bottom: 30px;
+    }
+  img{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 8px;
+    border-color: black
+  }
+  p {
+    color: #ff6f69;
+    font-weight: bold;
+    padding-top: 1px;
+    padding-bottom:50px;
+  }
+  img:hover {
+      box-shadow: 0 0 2px 1px rgba(0, 100, 100, 0.5);
+    }
 
-        .pizza {
-          width:auto;
-          padding: 5px
-        }
+     #images{
+       text-align: center;
+     }
+    </style>
 
-        .burger{
-          width:auto;
-        }
-        </style>
-    </head>
-    <body>
-        <h1>Choose your favourite food and we'll tell you which feminist icon you are!</h1>
+</head>
+<body>
+  <h1>Choose your favourite food and we'll tell you which feminist icon you are!</h1>
+  <div id="images">
+      <a target="_blank" href="https://en.wikipedia.org/wiki/Malala_Yousafzai">
+        <img width="250" height="230" alt="Picture of pizza" src="https://images.all-free-download.com/images/graphiclarge/pizza_hd_picture_6_167274.jpg" >
+      </a>
+      <p> Pizzas for life!</p>
 
-<div class="pizza">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Eq_it-na_pizza-margherita_sep2005_sml.jpg/440px-Eq_it-na_pizza-margherita_sep2005_sml.jpg"alt="A picture of pizza.">
-    <button class="btn">Pizzas for life</button>
-</div>
+      <a target="_blank" href="https://en.wikipedia.org/wiki/Ruth_Bader_Ginsburg">
+        <img width="250" height="200" alt="Picture of burger" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Cheeseburger.jpg/600px-Cheeseburger.jpg">
+      </a>
+      <p> Burgers for sure! </p>
 
-<div class="burger">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Cheeseburger.jpg/600px-Cheeseburger.jpg" alt="A picture of a burger">
-    <button class="btn">Burgers are my thing</button>
-</div>
+      <button onclick="goBack()">Go Back</button>
+    </div>
 
 <script src="jquery-3.3.1.min.js"></script>
-
-    </body>
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+</body>
 </html>
