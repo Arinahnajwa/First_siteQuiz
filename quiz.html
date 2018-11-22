@@ -22,17 +22,24 @@
 <body>
   <h1>Choose your favourite food and we'll tell you which feminist icon you are!</h1>
   <div id="images">
-  <a href="https://en.wikipedia.org/wiki/Malala_Yousafzai" target="_blank">
-    <img class="pizza" border="0" alt="Picture of pizza" src="https://images.all-free-download.com/images/graphiclarge/pizza_hd_picture_6_167274.jpg"/>
-    <p> Pizzas for life! </p>
-  </a>
+    <div class:"pizza">
+      <a href="https://en.wikipedia.org/wiki/Malala_Yousafzai" target="_blank">
+        <img width="300" height="300" border="0" alt="Picture of pizza" src="https://images.all-free-download.com/images/graphiclarge/pizza_hd_picture_6_167274.jpg"/>
+        <p> Pizzas for life! </p>
+      </a>
+      <a href="https://en.wikipedia.org/wiki/Ruth_Bader_Ginsburg" target="_blank">
+        <img width="300" height="250" border="0" alt="Picture of burger" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Cheeseburger.jpg/600px-Cheeseburger.jpg">
+        <p> Burgers for sure! </p>
+      </a>
+    </div>
 
-  <a href="https://en.wikipedia.org/wiki/Ruth_Bader_Ginsburg" target="_blank">
-    <img class="burger" border="0" alt="Picture of burger" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Cheeseburger.jpg/600px-Cheeseburger.jpg">
-    <p> Burgers for sure! </p>
-  </a>
-</div>
+    <button onclick="goBack()">Go Back</button>
 
 <script src="jquery-3.3.1.min.js"></script>
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
 </body>
 </html>
