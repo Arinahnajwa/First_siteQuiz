@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -45,39 +45,44 @@
     border: 1px solid white;
   }
     .submit {
+    padding: 12px 20px;
     width: 120px;
     height: 41px;
     border: none;
     margin-top: 20px
     cursor: pointer;
+    float: right;
   }
     .submit:hover {
       opacity: 0.5;
     }
-
-
+    .container {
+      border-radius: 5px;
+      padding: 20px;
+    }
 
   @media screen and (max-width: 600px) {
     .column, input[type=submit] {
       width: 100%
       margin-top:0;
     }
-  .navbar {
-      background-color: rgba(255, 105, 180, 1);
+    .navbar {
+      background-color: rgba(255, 105, 180, 0.5);
       list-style: none;
-      margin: 0;
-      left: 50%;
-      padding: 0;
       overflow: hidden;
-      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      text-align:center;
     }
-    .navbar ul{
-      display: inline-block;
-      list-style-type: none;
-      text-align: center;
-      position: relative;
+    .navabar ul {
+        display: inline-block;
+        list-style-type: none;
+        text-align: center;
+        position: relative;
     }
-    .navbar a {
+
+      .navbar a {
       color: white;
       display: inline-block;
       float: center;
@@ -91,6 +96,23 @@
       background-color: rgba(255, 105, 180, 0.5);
       color: rgba(250, 0, 193, 0.5);
     }
+    @media screen and (max-width: 600px) {
+      .navbar a:not (:first-child) {display: none;}
+      .navbar a.icon {
+        float: right;
+        display: block;
+      }
+    @media screen and max-width: 600px) {
+      .navbar.responsive .icon {
+        position: absolute;
+        right:0;
+        bottom: 0;
+      }
+    .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+      }
   </style>
 </head>
 <body>
@@ -130,11 +152,14 @@
       </div>
     </div>
   </div>
+
   <ul class="navbar">
 
-      <li><a href="index.html">Home</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="about.html">About</a></li>
-    </ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+
 </body>
 </html>

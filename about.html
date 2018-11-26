@@ -7,10 +7,86 @@
   <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 <style>
   body{
+
+      background-color: rgba(255, 105, 180, 0.7);
+    }
+
+
+    h1 {
+      font: 50 90px/1.5 'Pacifico', Helvetica, sans-serif;
+      color: white;
+      position: absolute;
+      top: 80px;
+      left: 50%;
+      text-shadow: 3px 1px 0px rgba(0, 0, 0, 0.1), 3px 5px 0px;
+      transform: translate(-50%, -50%);
+    }
+    h2 {
+      color: white;
+      font:50 35px/1.5 'Pacifico', Helvetica, sans-serif;
+      position: absolute;
+      top: 200px;
+    }
+    .navbar {
+        background-color: rgba(255, 105, 180, 1);
+        list-style: none;
+        overflow: hidden;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        text-align:center;
+      }
+      .navbar ul{
+        display: inline-block;
+        list-style-type: none;
+        text-align: center;
+        position: relative;
+      }
+      .navbar a {
+        color: white;
+        display: inline-block;
+        float: center;
+        font:50 40px/1.5 'Pacifico', Helvetica, sans-serif;
+        padding: 14px 20px;
+        text-align: center;
+        text-decoration: none;
+      }
+
+      .navbar a:hover {
+        background-color: rgba(255, 105, 180, 0.5);
+        color: rgba(250, 0, 193, 0.5);
+      }
+      @media screen and (max-width: 600px) {
+        .navbar a:not (:first-child) {display: none;}
+        .navbar a.icon {
+          float: right;
+          display: block;
+        }
+      @media screen and max-width: 600px) {
+        .navbar.responsive .icon {
+          position: absolute;
+          right:0;
+          bottom: 0;
+        }
+      .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
     </style>
   </head>
   <body>
     <h1>About Us</h1>
-    <h2>Hi there! Welcome to our Website.</h2>
+    <h2>Hi there! Welcome to our Website. We have created a quiz so that you can find out
+    which feminist icon matches your personality! We hope that once you get your result you will research
+    and learn about your icon so that you can channel her empowering energy... So take the quiz and let us know who you get!</h2>
+
+  <ul class="navbar">
+
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
   </body>
 </html>
