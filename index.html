@@ -6,6 +6,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
     body{
           margin:0;
@@ -22,7 +23,7 @@
 
       text-align: center;
 
-      background-image: url('emancipation-155792_1280.png');
+      background-image: url('emancipation-155792_1280 copy.png');
       background-size: contain;
       background-position: center;
       background-repeat: no-repeat;
@@ -100,20 +101,47 @@
     background-color: rgba(255, 105, 180, 0.5);
     color: rgba(250, 0, 193, 0.5);
   }
+  @media screen and (max-width: 600px) {
+    .navbar a:not (:first-child) {display: none;}
+    .navbar a.icon {
+      float: right;
+      display: block;
+    }
+  @media only screen and (max-width: 520px){
+    nav ul {
+      padding: 24px 4px;
+    }
+    nav ul a {
+      font-size: 13px;
+    }
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 
+  @supports(mix-blend-mode:overlay){
+    .example {
+      mix-blend-mode:overlay;
+    }
+    .navbar ul.socials {
+      margin-top: 10px;
+      float: center;
+    }
+    .navbar ul.socials li{
+      display: inline-block;
+    }
+    navbar. il.socials li span{
+      font-family: sans-serif, Helvetica;
+      font-size: 100px;
+      margin-right: 20px;
+    }
+    @media screen and (max-width: 600px) {
+      .column, input[type=submit] {
+        width: 100%
+        margin-top:0;}
 
-  .navbar ul.socials {
-    margin-top: 10px;
-    float: center;
-  }
-  .navbar ul.socials li{
-    display: inline-block;
-  }
-  navbar. ul.socials li span{
-  font-family:sans-serif, Helvetica;
-  font-size: 100px;
-  margin-right: 20px;
-  }
   </style>
 </head>
   <body>
@@ -129,25 +157,28 @@
 
   <ul class="navbar">
 
-      <li><a href="index.html">Home</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="about.html">About</a></li>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="about.html">About</a></li>
 
-      <div class="social_container">
+    <div class="social_container">
         <ul class="socials">
         <li>
           <span>SHARE</span>
         </li>
         <li class="facebook">
-          <a href="<!--fake button-->" target="_blank"><img alt="facebook" src""></a>
+          <a href="<!--fake button-->" target="_blank"><img alt="facebook" img src="Facebook.png"></a>
         </li>
         <li class="twitter">
-          <a href="<!--fake button-->" target="_blank"><img alt="twitter" src""></a>
+          <a href="<!--fake button-->" target="_blank"><img alt="twitter" img src="Twitter.png"></a>
         </li>
         <li class="instagram">
-          <a href="<!--fake button-->" target="_blank"><img alt="instagram" src""></a>
+          <a href="<!--fake button-->" target="_blank"><img alt="instagram" img src="Instagram.png"></a>
         </li>
       </ul>
+    </div>
+  </ul>
+
     </div>
   </ul>
 
