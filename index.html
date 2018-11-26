@@ -5,7 +5,7 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type='text/css'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
     body{
@@ -33,7 +33,7 @@
 
 
     .hero h1 {
-      font: 50 110px/1.5 'Pacifico', Helvetica, sans-serif;
+      font: 50 110vw/1.5 'Pacifico', Helvetica, sans-serif;
       color: white;
       position: absolute;
       top: 145px;
@@ -43,7 +43,7 @@
     }
     .hero h2 {
       color: white;
-      font:50 50px/1.5 'Pacifico', Helvetica, sans-serif;
+      font:50 50vw/1.5 'Pacifico', Helvetica, sans-serif;
       position: absolute;
       top: 440px;
     }
@@ -99,7 +99,7 @@
 
   .navbar a:hover {
     background-color: rgba(255, 105, 180, 0.5);
-    color: rgba(250, 0, 193, 0.5);
+    color: rgba(250, 0, 193, 0.9);
   }
   @media screen and (max-width: 600px) {
     .navbar a:not (:first-child) {display: none;}
@@ -125,22 +125,24 @@
     .example {
       mix-blend-mode:overlay;
     }
-    .navbar ul.socials {
+    .navbar li.socials {
       margin-top: 10px;
       float: center;
     }
-    .navbar ul.socials li{
+    .navbar li.socials li{
       display: inline-block;
     }
-    navbar. il.socials li span{
+    navbar. li.socials li span{
       font-family: sans-serif, Helvetica;
       font-size: 100px;
       margin-right: 20px;
     }
     @media screen and (max-width: 600px) {
-      .column, input[type=submit] {
-        width: 100%
-        margin-top:0;}
+      div.example {
+        font-size: 20px;
+      }
+    }
+
 
   </style>
 </head>
@@ -162,7 +164,7 @@
     <li><a href="about.html">About</a></li>
 
     <div class="social_container">
-        <ul class="socials">
+        <li class="socials">
         <li>
           <span>SHARE</span>
         </li>
@@ -175,7 +177,7 @@
         <li class="instagram">
           <a href="<!--fake button-->" target="_blank"><img alt="instagram" img src="Instagram.png"></a>
         </li>
-      </ul>
+      </li>
     </div>
   </ul>
 
